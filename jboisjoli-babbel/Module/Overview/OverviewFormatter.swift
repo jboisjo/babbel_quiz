@@ -30,7 +30,7 @@ class OverviewFormatter {
         var chunkedList: [WordPairUIModel] = []
         var multiArrayGameList: [[WordPairUIModel]] = [[]]
         
-        for i in 0...currentListShuffled.count {
+        for i in 0...currentListShuffled.count - 1 {
             // Create chunk of 4 to create a rounding of 25%
             if i % 4 != 0 {
                 // Add none-maatching word
@@ -46,6 +46,7 @@ class OverviewFormatter {
                 chunkedList.append(WordPairUIModel(wordEnglish: currentListShuffled[i].wordEnglish,
                                             wordSpanish: currentListShuffled[i].wordSpanish,
                                             isCorrect: true))
+                
                 
                 let shuffledChunk = chunkedList.shuffled() // shuffle again to make sure it doesnt follows
                 multiArrayGameList.append(shuffledChunk)

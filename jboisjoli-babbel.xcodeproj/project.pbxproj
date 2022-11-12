@@ -27,6 +27,9 @@
 		AF5C29BA291EE3E900AF16CC /* ContentUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29B9291EE3E900AF16CC /* ContentUIModels.swift */; };
 		AF5C29BE291EE4F500AF16CC /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29BD291EE4F500AF16CC /* APIHelper.swift */; };
 		AF5C29C0291EE61E00AF16CC /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = AF5C29BF291EE61E00AF16CC /* words.json */; };
+		AF5C29C3291F2EA100AF16CC /* OverviewPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29C2291F2EA100AF16CC /* OverviewPresenterTest.swift */; };
+		AF5C29C5291F2EB000AF16CC /* OverviewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29C4291F2EB000AF16CC /* OverviewDelegateMock.swift */; };
+		AF5C29C7291F2EBD00AF16CC /* OverviewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29C6291F2EBD00AF16CC /* OverviewControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		AF5C29B9291EE3E900AF16CC /* ContentUIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUIModels.swift; sourceTree = "<group>"; };
 		AF5C29BD291EE4F500AF16CC /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		AF5C29BF291EE61E00AF16CC /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		AF5C29C2291F2EA100AF16CC /* OverviewPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewPresenterTest.swift; sourceTree = "<group>"; };
+		AF5C29C4291F2EB000AF16CC /* OverviewDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewDelegateMock.swift; sourceTree = "<group>"; };
+		AF5C29C6291F2EBD00AF16CC /* OverviewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		AF5C297A291EDB0700AF16CC /* jboisjoli-babbelTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF5C29C1291F2E8A00AF16CC /* Overview */,
 				AF5C297B291EDB0700AF16CC /* jboisjoli_babbelTests.swift */,
 			);
 			path = "jboisjoli-babbelTests";
@@ -206,6 +213,16 @@
 				AF5C29B9291EE3E900AF16CC /* ContentUIModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AF5C29C1291F2E8A00AF16CC /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C29C2291F2EA100AF16CC /* OverviewPresenterTest.swift */,
+				AF5C29C4291F2EB000AF16CC /* OverviewDelegateMock.swift */,
+				AF5C29C6291F2EBD00AF16CC /* OverviewControllerMock.swift */,
+			);
+			path = Overview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5C29C7291F2EBD00AF16CC /* OverviewControllerMock.swift in Sources */,
 				AF5C297C291EDB0700AF16CC /* jboisjoli_babbelTests.swift in Sources */,
+				AF5C29C3291F2EA100AF16CC /* OverviewPresenterTest.swift in Sources */,
+				AF5C29C5291F2EB000AF16CC /* OverviewDelegateMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
