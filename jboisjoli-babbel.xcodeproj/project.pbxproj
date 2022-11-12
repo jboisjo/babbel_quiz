@@ -8,15 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AF5C2963291EDB0600AF16CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C2962291EDB0600AF16CC /* AppDelegate.swift */; };
-		AF5C2965291EDB0600AF16CC /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C2964291EDB0600AF16CC /* DocumentBrowserViewController.swift */; };
-		AF5C2967291EDB0600AF16CC /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C2966291EDB0600AF16CC /* DocumentViewController.swift */; };
-		AF5C2969291EDB0600AF16CC /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C2968291EDB0600AF16CC /* Document.swift */; };
-		AF5C296C291EDB0600AF16CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5C296A291EDB0600AF16CC /* Main.storyboard */; };
 		AF5C296E291EDB0700AF16CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5C296D291EDB0700AF16CC /* Assets.xcassets */; };
 		AF5C2971291EDB0700AF16CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5C296F291EDB0700AF16CC /* LaunchScreen.storyboard */; };
 		AF5C297C291EDB0700AF16CC /* jboisjoli_babbelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C297B291EDB0700AF16CC /* jboisjoli_babbelTests.swift */; };
 		AF5C2986291EDB0700AF16CC /* jboisjoli_babbelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C2985291EDB0700AF16CC /* jboisjoli_babbelUITests.swift */; };
 		AF5C2988291EDB0700AF16CC /* jboisjoli_babbelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C2987291EDB0700AF16CC /* jboisjoli_babbelUITestsLaunchTests.swift */; };
+		AF5C2997291EDBB200AF16CC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C2996291EDBB200AF16CC /* AppRouter.swift */; };
+		AF5C299C291EDC1200AF16CC /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C299A291EDC1200AF16CC /* OverviewController.swift */; };
+		AF5C299D291EDC1200AF16CC /* OverviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5C299B291EDC1200AF16CC /* OverviewController.xib */; };
+		AF5C299F291EDC2800AF16CC /* OverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C299E291EDC2800AF16CC /* OverviewPresenter.swift */; };
+		AF5C29A1291EDC3100AF16CC /* OverviewFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29A0291EDC3100AF16CC /* OverviewFormatter.swift */; };
+		AF5C29A4291EDD0F00AF16CC /* TableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29A3291EDD0F00AF16CC /* TableView+Ext.swift */; };
+		AF5C29A6291EDD3300AF16CC /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29A5291EDD3300AF16CC /* UIColor+Ext.swift */; };
+		AF5C29A8291EDD9300AF16CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29A7291EDD9300AF16CC /* Constants.swift */; };
+		AF5C29AA291EDDB300AF16CC /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29A9291EDDB300AF16CC /* String+Ext.swift */; };
+		AF5C29B2291EDE1700AF16CC /* MainTranslationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29B0291EDE1700AF16CC /* MainTranslationCell.swift */; };
+		AF5C29B3291EDE1700AF16CC /* MainTranslationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5C29B1291EDE1700AF16CC /* MainTranslationCell.xib */; };
+		AF5C29BA291EE3E900AF16CC /* ContentUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29B9291EE3E900AF16CC /* ContentUIModels.swift */; };
+		AF5C29BE291EE4F500AF16CC /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5C29BD291EE4F500AF16CC /* APIHelper.swift */; };
+		AF5C29C0291EE61E00AF16CC /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = AF5C29BF291EE61E00AF16CC /* words.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +49,6 @@
 /* Begin PBXFileReference section */
 		AF5C295F291EDB0600AF16CC /* jboisjoli-babbel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jboisjoli-babbel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5C2962291EDB0600AF16CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF5C2964291EDB0600AF16CC /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
-		AF5C2966291EDB0600AF16CC /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
-		AF5C2968291EDB0600AF16CC /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		AF5C296B291EDB0600AF16CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF5C296D291EDB0700AF16CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF5C2970291EDB0700AF16CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF5C2972291EDB0700AF16CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +57,20 @@
 		AF5C2981291EDB0700AF16CC /* jboisjoli-babbelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jboisjoli-babbelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5C2985291EDB0700AF16CC /* jboisjoli_babbelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jboisjoli_babbelUITests.swift; sourceTree = "<group>"; };
 		AF5C2987291EDB0700AF16CC /* jboisjoli_babbelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jboisjoli_babbelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF5C2996291EDBB200AF16CC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		AF5C299A291EDC1200AF16CC /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		AF5C299B291EDC1200AF16CC /* OverviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewController.xib; sourceTree = "<group>"; };
+		AF5C299E291EDC2800AF16CC /* OverviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewPresenter.swift; sourceTree = "<group>"; };
+		AF5C29A0291EDC3100AF16CC /* OverviewFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewFormatter.swift; sourceTree = "<group>"; };
+		AF5C29A3291EDD0F00AF16CC /* TableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Ext.swift"; sourceTree = "<group>"; };
+		AF5C29A5291EDD3300AF16CC /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		AF5C29A7291EDD9300AF16CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF5C29A9291EDDB300AF16CC /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		AF5C29B0291EDE1700AF16CC /* MainTranslationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTranslationCell.swift; sourceTree = "<group>"; };
+		AF5C29B1291EDE1700AF16CC /* MainTranslationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTranslationCell.xib; sourceTree = "<group>"; };
+		AF5C29B9291EE3E900AF16CC /* ContentUIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUIModels.swift; sourceTree = "<group>"; };
+		AF5C29BD291EE4F500AF16CC /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		AF5C29BF291EE61E00AF16CC /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +121,13 @@
 		AF5C2961291EDB0600AF16CC /* jboisjoli-babbel */ = {
 			isa = PBXGroup;
 			children = (
+				AF5C2999291EDBF700AF16CC /* Module */,
+				AF5C2994291EDBA200AF16CC /* Common */,
+				AF5C29A2291EDD0000AF16CC /* Utils */,
 				AF5C2962291EDB0600AF16CC /* AppDelegate.swift */,
-				AF5C2964291EDB0600AF16CC /* DocumentBrowserViewController.swift */,
-				AF5C2966291EDB0600AF16CC /* DocumentViewController.swift */,
-				AF5C2968291EDB0600AF16CC /* Document.swift */,
-				AF5C296A291EDB0600AF16CC /* Main.storyboard */,
 				AF5C296D291EDB0700AF16CC /* Assets.xcassets */,
 				AF5C296F291EDB0700AF16CC /* LaunchScreen.storyboard */,
+				AF5C29BF291EE61E00AF16CC /* words.json */,
 				AF5C2972291EDB0700AF16CC /* Info.plist */,
 			);
 			path = "jboisjoli-babbel";
@@ -128,6 +148,64 @@
 				AF5C2987291EDB0700AF16CC /* jboisjoli_babbelUITestsLaunchTests.swift */,
 			);
 			path = "jboisjoli-babbelUITests";
+			sourceTree = "<group>";
+		};
+		AF5C2994291EDBA200AF16CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C2996291EDBB200AF16CC /* AppRouter.swift */,
+				AF5C29BD291EE4F500AF16CC /* APIHelper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AF5C2998291EDBEF00AF16CC /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C29B8291EE3D000AF16CC /* Models */,
+				AF5C29AB291EDDE600AF16CC /* Cell */,
+				AF5C299B291EDC1200AF16CC /* OverviewController.xib */,
+				AF5C299A291EDC1200AF16CC /* OverviewController.swift */,
+				AF5C299E291EDC2800AF16CC /* OverviewPresenter.swift */,
+				AF5C29A0291EDC3100AF16CC /* OverviewFormatter.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		AF5C2999291EDBF700AF16CC /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C2998291EDBEF00AF16CC /* Overview */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		AF5C29A2291EDD0000AF16CC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C29A3291EDD0F00AF16CC /* TableView+Ext.swift */,
+				AF5C29A5291EDD3300AF16CC /* UIColor+Ext.swift */,
+				AF5C29A7291EDD9300AF16CC /* Constants.swift */,
+				AF5C29A9291EDDB300AF16CC /* String+Ext.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AF5C29AB291EDDE600AF16CC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C29B0291EDE1700AF16CC /* MainTranslationCell.swift */,
+				AF5C29B1291EDE1700AF16CC /* MainTranslationCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF5C29B8291EE3D000AF16CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C29B9291EE3E900AF16CC /* ContentUIModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +312,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5C299D291EDC1200AF16CC /* OverviewController.xib in Resources */,
 				AF5C2971291EDB0700AF16CC /* LaunchScreen.storyboard in Resources */,
+				AF5C29B3291EDE1700AF16CC /* MainTranslationCell.xib in Resources */,
 				AF5C296E291EDB0700AF16CC /* Assets.xcassets in Resources */,
-				AF5C296C291EDB0600AF16CC /* Main.storyboard in Resources */,
+				AF5C29C0291EE61E00AF16CC /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +341,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5C2969291EDB0600AF16CC /* Document.swift in Sources */,
-				AF5C2967291EDB0600AF16CC /* DocumentViewController.swift in Sources */,
-				AF5C2965291EDB0600AF16CC /* DocumentBrowserViewController.swift in Sources */,
+				AF5C29B2291EDE1700AF16CC /* MainTranslationCell.swift in Sources */,
+				AF5C29AA291EDDB300AF16CC /* String+Ext.swift in Sources */,
+				AF5C29BE291EE4F500AF16CC /* APIHelper.swift in Sources */,
+				AF5C29A6291EDD3300AF16CC /* UIColor+Ext.swift in Sources */,
+				AF5C29A1291EDC3100AF16CC /* OverviewFormatter.swift in Sources */,
+				AF5C29A4291EDD0F00AF16CC /* TableView+Ext.swift in Sources */,
+				AF5C2997291EDBB200AF16CC /* AppRouter.swift in Sources */,
+				AF5C299F291EDC2800AF16CC /* OverviewPresenter.swift in Sources */,
+				AF5C299C291EDC1200AF16CC /* OverviewController.swift in Sources */,
 				AF5C2963291EDB0600AF16CC /* AppDelegate.swift in Sources */,
+				AF5C29A8291EDD9300AF16CC /* Constants.swift in Sources */,
+				AF5C29BA291EE3E900AF16CC /* ContentUIModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF5C296A291EDB0600AF16CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF5C296B291EDB0600AF16CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF5C296F291EDB0700AF16CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,7 +528,8 @@
 				INFOPLIST_FILE = "jboisjoli-babbel/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
@@ -477,7 +558,8 @@
 				INFOPLIST_FILE = "jboisjoli-babbel/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
