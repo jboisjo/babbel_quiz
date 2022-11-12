@@ -37,6 +37,9 @@ class OverviewController: UIViewController {
     private var wrongAttempts = 0
     private var currentIndex = 0
     
+    // Timer
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,6 +54,7 @@ class OverviewController: UIViewController {
         super.viewWillAppear(animated)
         
         presenter?.viewDidLoad()
+        resetTimer()
     }
     
     @IBAction func correctAction(_ sender: Any) {
@@ -81,10 +85,12 @@ extension OverviewController: OverviewControllerProtocol {
         mainTableView.reloadData()
     }
     
-    func incorrectIncrease() {
+    @objc func incorrectIncrease() {
         currentIndex+=1
         
         increaseWrongAttempts()
+        
+        resetTimer()
         mainTableView.reloadData()
     }
 }
@@ -101,6 +107,11 @@ extension OverviewController: UITableViewDataSource {
             cell.set(data: currentWord)
             
             self.currentWord = currentWord
+            
+            // Close the app if wrong has reached to 3 or user reached 15 correct
+            if wrongAttempts == 3 || correctAttempts == 15 {
+                exit(0)
+            }
 
             return cell
         }
@@ -166,5 +177,10 @@ private extension OverviewController {
     func increaseWrongAttempts() {
         wrongAttempts+=1
         wrongAttemptsLabel.text = "Wrong attemps: \(wrongAttempts)"
+    }
+    
+    @objc func resetTimer() {
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(incorrectIncrease), userInfo: nil, repeats: false)
     }
 }
